@@ -1,5 +1,7 @@
 package main;
 
+import java.util.List;
+
 import persona.ClonadorPersona;
 import persona.Persona;
 
@@ -9,7 +11,9 @@ public class Start {
 		// TODO Auto-generated method stub
 
 		ClonadorPersona clone = new ClonadorPersona("Diego");
-		System.out.println(clone.clonar());
+		List<Persona> personas = clone.clonar();
+		
+		System.out.println(personas);
 	}
 
 }

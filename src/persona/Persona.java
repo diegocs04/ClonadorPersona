@@ -80,7 +80,7 @@ package persona;
 		 */
 		public String toString() {
 			
-			return "Persona [" + nombre + ", " + edad + " años, " + peso + " kg, " + altura + " cm] ||";
+			return "\nPersona [" + nombre + ", " + edad + " años, " + peso + " kg, " + altura + " cm]";
 		} 
 		
 	}
