@@ -11,7 +11,7 @@ public class ClonadorPersona {
 		this.nombre = nombre;
 	}
 
-	PersonaData pd = new PersonaData();
+	ValidadorPersona vp = new ValidadorPersona();
 
 	public List<Persona> clonar() {
 
@@ -23,7 +23,7 @@ public class ClonadorPersona {
 				int peso = (int) (Math.random() * 101);
 				int altura = (int) (Math.random() * 201);
 
-				pd.comprobarPersona(peso, edad, altura);
+				vp.isValid(edad,peso,altura);
 				clones.add(new Persona(nombre, edad, peso, altura));
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
